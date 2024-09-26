@@ -20,7 +20,7 @@ const App: React.FC = () => {
 	const chain = useCell(current?.chain);
 	const chainOK = useCell(current?.chainOK);
 
-	const [value, setValue] = useState(0.00001);
+	const [value, setValue] = useState(0.001);
 	useEffect(() => {
 		if (current) {
 			current.setValue(value);
